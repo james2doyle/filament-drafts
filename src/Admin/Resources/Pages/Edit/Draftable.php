@@ -85,8 +85,8 @@ trait Draftable
     protected function getSavedNotificationTitle(): ?string
     {
         return $this->shouldSaveAsDraft
-            ? 'Draft saved'
-            : 'Published';
+            ? __('filament-drafts::notifications.draft_saved')
+            : __('filament-panels::notifications.published');
     }
 
     protected function getSavedNotification(): ?Notification
