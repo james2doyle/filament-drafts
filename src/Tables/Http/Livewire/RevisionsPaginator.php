@@ -26,10 +26,10 @@ class RevisionsPaginator extends Component
     /**
      * Updates the revisions list.
      *
-     * @param int $id
+     * @param int|string $id
      * @return void
      */
-    public function updateRevisions(int $id): void
+    public function updateRevisions(int|string $id): void
     {
         $record = $this->record::withoutGlobalScopes([
             SoftDeletingScope::class,
